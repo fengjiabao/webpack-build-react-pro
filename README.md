@@ -1,5 +1,7 @@
 # webpack-build-react-pro
+
 1：安装git环境,cnpm
+
 2：安装node.js
   npm install node.js 或cnpm install node.js	
 3: 安装react,webpack
