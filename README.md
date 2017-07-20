@@ -28,23 +28,42 @@
 6：webpack module 配置需注意loaders配置项
 
 module: {
+
     loaders: [{
+    
       test: /\.(jsx|js)$/,
+      
       loader: 'babel-loader',
+      
       exclude: /node_modules/,
+      
       query: {
+      
         presets: ['react', 'es2015']
+	
       }
+      
     }, {
+    
       test: /\.css$/,
+      
       loader: 'style!css'
+      
     }, {
+    
       test: /\.less$/,
+      
       loader: 'style!css!less'
+      
     }, {
+    
       test: /\.(png|jpg)$/,
+      
       loader: 'url?limit=25000'
+      
     }]
+    
   }
+  
   
 7: npm run build //编译项目
