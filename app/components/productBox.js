@@ -1,12 +1,17 @@
-var React = require('react')
+// var React = require('react')
+import React from 'react'
 var ProductBox = React.createClass({
   render: function () {
     return (
       <div className='productBox'>
-        Hello Word!!!
+        Hello Word:::
       </div>
     )
   }
 })
 
-module.exports = ProductBox
+/**
+ * commonJs规范
+ */
+// module.exports = ProductBox
+export default ProductBox
