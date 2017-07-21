@@ -1,7 +1,8 @@
 var path = require('path')
+var webpack = require('webpack')
 
 module.exports = {
-  entry: path.resolve(__dirname, './app/main.js'),
+  entry: ['webpack/hot/dev-server', path.resolve(__dirname, './app/main.js')],
   output: {
     path: path.resolve(__dirname, './build'),
     filename: 'bundle.js'
@@ -24,5 +25,9 @@ module.exports = {
       test: /\.(png|jpg)$/,
       loader: 'url?limit=25000'
     }]
-  }
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ]
+
 }

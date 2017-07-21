@@ -11,10 +11,12 @@
     "react": "^15.6.1",
     "style-loader": "^0.18.2",
     "url-loader": "^0.5.9",
-    "webpack": "^3.3.0"
+    "webpack": "^3.3.0",
+    "webpack-dev-server": "^2.5.1"
   },
   "scripts": {
     "build": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --colors --content-base build",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
@@ -22,6 +24,7 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "^1.0.10"
+    "react-scripts": "^1.0.10",
+    "webpack-dev-server": "^2.5.1"
   }
 }
